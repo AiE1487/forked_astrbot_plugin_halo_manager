@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 AstrBot Plugin: Halo Manager
+# [FORKED][AI_USE]AstrBot Plugin: Halo Manager
 
 <a href="https://github.com/Soulter/AstrBot">
   <img src="https://img.shields.io/badge/AstrBot-v3.x%2B-blue" alt="AstrBot Version">
