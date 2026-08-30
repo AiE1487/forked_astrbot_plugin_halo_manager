@@ -13,8 +13,14 @@
   },
   "halo_owner": {
     "type": "string",
-    "title": "文章作者 (Owner，可选)",
-    "description": "发帖使用的作者登录名（如 admin）。不填时通过 GetCurrentUserDetail 接口用当前 PAT 自动获取用户名。",
+    "title": "文章发送账号 (Owner，可选)",
+    "description": "文章作者使用的 Halo 登录用户名（不是昵称），例如 admin。发布时会校验该用户是否存在；留空时使用 Token 所属账号。填了不存在或已删除的用户名会导致文章作者显示为「已删除用户」。",
     "default": ""
+  },
+  "enable_moments_tools": {
+    "type": "bool",
+    "title": "注册瞬间发布与管理工具",
+    "description": "开启后额外注册 3 个 AI 工具：发布瞬间 (publish_blog_moment)、列出瞬间 (list_blog_moments)、删除瞬间 (delete_blog_moment)。发布者为 Token 所属账号，需要博客已安装并启用「瞬间」(plugin-moments) 插件。修改后需重载插件生效。",
+    "default": false
   }
 }
