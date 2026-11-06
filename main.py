@@ -620,10 +620,10 @@ class DeleteBlogCommentTool(FunctionTool[AstrAgentContext]):
 
 @register(
     "astrbot_plugin_halo_manager",
-    "CAN",
+    "AiE1487",
     "Halo 2.x 博客管理插件",
     "1.4.1",
-    "https://github.com/danielsunrise/astrbot_plugin_halo_manager"
+    "https://github.com/AiE1487/forked_astrbot_plugin_halo_manager"
 )
 class HaloManager(Star):
     def __init__(self, context: Context, config: Dict[str, Any]):
