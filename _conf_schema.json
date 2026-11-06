@@ -20,7 +20,13 @@
   "enable_moments_tools": {
     "type": "bool",
     "title": "注册瞬间发布与管理工具",
-    "description": "开启后额外注册 3 个 AI 工具：发布瞬间 (publish_blog_moment)、列出瞬间 (list_blog_moments)、删除瞬间 (delete_blog_moment)。发布者为 Token 所属账号，需要博客已安装并启用「瞬间」(plugin-moments) 插件。修改后需重载插件生效。",
+    "description": "开启后额外注册 3 个 AI 工具：发布瞬间 (publish_blog_moment)、浏览瞬间 (list_blog_moments，支持全部公开/仅自己/指定用户过滤与翻页)、删除瞬间 (delete_blog_moment)。发布者为 Token 所属账号，需要博客已安装并启用「瞬间」(plugin-moments) 插件。修改后需重载插件生效。",
+    "default": false
+  },
+  "enable_delete_tools": {
+    "type": "bool",
+    "title": "注册评论删除工具",
+    "description": "开启后额外注册 AI 工具：删除评论 (delete_blog_comment)。删除评论会连带删除其下所有回复，且需要 Token 所属账号拥有评论管理权限（如超级管理员）。修改后需重载插件生效。",
     "default": false
   }
 }

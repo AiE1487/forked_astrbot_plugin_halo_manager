@@ -61,3 +61,8 @@ IFLOW.md
 # genie_tts data
 CharacterModels/
 GenieData/
+
+# Plugin release artifacts / local agent workspace
+*.zip
+.v2c/
+.zcode/
